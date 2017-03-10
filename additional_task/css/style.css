@@ -1,0 +1,208 @@
+@font-face {
+  font-family: Futura;
+  /* Имя шрифта */
+  src: url('../fonts/futura.ttf');
+  /* Путь к файлу со шрифтом */
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+body li {
+  list-style-type: none;
+}
+/*Header*/
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 140px;
+  z-index: 9999;
+}
+header .bar {
+  height: 80px;
+  background: #eaeaea;
+}
+header .bar:last-child {
+  background: white;
+  border: 0.5px solid #b4b4b4;
+  height: 60px;
+}
+.bar {
+  height: 140px;
+}
+.user {
+  float: right;
+  margin: 20px;
+}
+.user a {
+  margin-right: 20px;
+}
+.user a img {
+  width: 40px;
+}
+.user a:first-child img {
+  width: 25px;
+}
+.nav {
+  float: left;
+  margin: 20px 400px;
+}
+.nav a {
+  margin-right: 30px;
+}
+.nav a img {
+  width: 18px;
+}
+.nav a:first-of-type {
+  margin-right: 0;
+}
+.logo {
+  float: left;
+  width: 200px;
+  margin: 15px 50px;
+  font-family: Futura;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: red;
+}
+.form-search {
+  float: left;
+  height: 25px;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+.form-search input[type="text"] {
+  width: 800px;
+  height: 15px;
+}
+/*Workspace*/
+.form-work {
+  display: flex;
+}
+/*Folder*/
+.folder {
+  width: 500px;
+  height: 100%;
+  padding: 20px 30px;
+  background: white;
+}
+.folder ul {
+  margin-left: -40px;
+  margin-top: 25px;
+}
+.folder ul li {
+  margin-top: 10px;
+}
+.folder ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: Futura;
+  font-size: 18px;
+}
+.folder ul li a:hover {
+  color: red;
+}
+/*Mails*/
+.mails {
+  margin-right: 30px;
+}
+.footLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footLinks li {
+  display: inline-block;
+}
+.footLinks li a {
+  color: #787878;
+}
+.footLinks li p {
+  color: #3b3b3b;
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Amsdam;
+}
+.mail a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.lineMail {
+  display: flex;
+  height: 30px;
+  background: #dedede;
+  border-top: 0.5px solid #b4b4b4;
+}
+.lineMail div {
+  margin-left: 5px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.selection {
+  width: 20px;
+}
+.sender {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date {
+  width: 150px;
+}
+.content {
+  overflow: hidden;
+  color: #787878;
+}
+.subject {
+  font-weight: bold;
+  color: black;
+}
+/*Button*/
+a.button-main {
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #444444;
+  text-decoration: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f5f5f5 linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+}
+a.button-main:hover {
+  color: #181818;
+  border: 1px solid #989898;
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+a.button-main:active {
+  color: #333333;
+  border: 1px solid #cccccc;
+  background: #eeeeee linear-gradient(#eeeeee, #e0e0e0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+a.button-folder {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  background: #d44b38;
+  padding: .5em 1.9em;
+  outline: none;
+}
+a.button-folder:hover {
+  background: #e85f4c;
+}
+a.button-folder:active {
+  background: #980f00;
+}

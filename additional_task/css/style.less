@@ -1,0 +1,213 @@
+@borderDefault: 0.5px solid #b4b4b4;
+@color-main-grey: #787878;
+@color-bar-grey: #eaeaea;
+@height-bar: 140px;
+
+@font-face {
+  font-family: Futura; /* Имя шрифта */
+  src: url('../fonts/futura.ttf'); /* Путь к файлу со шрифтом */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  li {
+    list-style-type: none;
+  }
+}
+
+/*Header*/
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: @height-bar;
+  z-index: 9999;
+  .bar {
+    height: @height-bar / 2 + 10px;
+    background: @color-bar-grey;
+    &:last-child {
+      background: white;
+      border: @borderDefault;
+      height: @height-bar / 2 - 10px;
+    }
+  }
+}
+.bar {
+  height: @height-bar;
+}
+.user {
+  float: right;
+  margin: 20px;
+  a {
+    margin-right: 20px;
+    img {
+      width: 40px;
+    }
+    &:first-child img {
+      width: 25px;
+    }
+  }
+}
+.nav {
+  float: left;
+  margin: 20px 400px;
+  a {
+    margin-right: 30px;
+    img {
+      width: 18px;
+    }
+  }
+  a:first-of-type{
+    margin-right: 0;
+  }
+}
+.logo {
+  float: left;
+  width: 200px;
+  margin: 15px 50px;
+  font-family: Futura;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: red;
+}
+.form-search {
+  float: left;
+  height: 25px;
+  margin-top: 25px;
+  margin-left: 50px;
+  input[type="text"] {
+    width: 800px;
+    height: 15px;
+  }
+}
+
+
+/*Workspace*/
+.form-work {
+  display: flex;
+}
+/*Folder*/
+.folder {
+  width: 500px;
+  height: 100%;
+  padding: 20px 30px;
+  background: white;
+  ul {
+    margin-left: -40px;
+    margin-top: 25px;
+    li {
+      margin-top: 10px;
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: Futura;
+        font-size: 18px;
+      }
+      a:hover {
+        color: red;
+      }
+    }
+  }
+}
+/*Mails*/
+.mails {
+  margin-right: 30px;
+}
+.footLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    display: inline-block;
+    a {
+      color: @color-main-grey;
+    }
+    p {
+      color: #3b3b3b;
+    }
+  }
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Amsdam;
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+}
+.lineMail {
+  display: flex;
+  height: 30px;
+  background: #dedede;
+  border-top: @borderDefault;
+  div {
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+}
+.selection {
+  width: 20px;
+}
+.sender {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.date {
+  width: 150px;
+}
+.content {
+  overflow: hidden;
+  color: @color-main-grey;
+}
+.subject {
+  font-weight: bold;
+  color: black;
+}
+/*Button*/
+a.button-main {
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+}
+a.button-main:hover {
+  color: rgb(24,24,24);
+  border: 1px solid rgb(152, 152, 152);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+a.button-main:active {
+  color: rgb(51,51,51);
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+a.button-folder {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  background: rgb(212,75,56);
+  padding: .5em 1.9em;
+  outline: none;
+}
+a.button-folder:hover { background: rgb(232,95,76); }
+a.button-folder:active { background: rgb(152,15,0); }
+
+

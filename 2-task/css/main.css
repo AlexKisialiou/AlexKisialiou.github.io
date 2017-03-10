@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Amsdam;
+    src: url('../fonts/10213.ttf');
+}
+body {
+    background: rgba(59, 213, 25, 0.39);
+    margin: 0;
+}
+header, .billboard, .services, .video, .recent_work,.subscription_box, footer {
+    margin: 0 100px;
+}
+a {
+    text-decoration: none;
+}
+/*Header*/
+header{
+    height: 100px;
+    font-family: "Californian FB";
+}
+.logo {
+    font-size: 300%;
+    margin-top: 20px;
+    float: left;
+}
+.navigate{
+    float: right;
+    margin-top: 30px;
+}
+.navigate a {
+    color: #0a0a0a;
+    font-size: 120%;
+    margin-right: 30px;
+}
+.navigate a:last-child {
+    display: none;
+}
+.navigate a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*Billboard*/
+.billboard {
+    margin: 0 0 50px;
+    position: relative;
+    font-family: "Californian FB";
+}
+.billboard img {
+    width: 100%;
+}
+.caption{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -10% 0 0 -25%;
+}
+.caption h1 {
+    font-size: 300%;
+}
+.caption h2 {
+    font-size: 150%;
+}
+.caption a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    width: 13em;
+    font-size: 130%;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    background: linear-gradient(rgba(52, 52, 52, 0.5), rgb(79, 79, 79));
+}
+.caption a:hover {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgba(52, 52, 52, 0.5), rgb(255, 255, 255));
+}
+
+/*Services*/
+.services {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 300px;
+    width: 90%;
+}
+.services div {
+    width: 400px;
+    font-family: Amsdam;
+    text-align: center;
+    display: inline-block;
+}
+.services-block h1 {
+    font-weight:bolder;
+    font-size: 220%;
+    text-transform: uppercase;
+}
+.services-block h3 {
+    font-size: 130%;
+}
+
+.services-block {
+    float: left;
+}
+.services-block:last-child {
+    float: right;
+    margin-right: 0px;
+}
+.services-block:nth-child(2) {
+    float: none;
+}
+/*Video*/
+.video {
+    text-align: center;
+    margin: 100px 0;
+    font-family:Amsdam;
+}
+.video h1{
+    font-weight: bold;
+    font-size: 300%;
+    text-transform: uppercase;
+}
+.video h2{
+    align-content: center;
+    width: 1000px;
+    left:0;
+    right:0;
+    margin: auto;
+    font-size: 150%;
+}
+.video img {
+    margin-top: 100px;
+}
+
+/*  Recent work  */
+.recent_work{
+    position: relative;
+    margin-bottom: 100px;
+    font-family: Amsdam;
+}
+.recent_work h1 {
+     font-size: 300%;
+     text-align: center;
+     text-transform: uppercase;
+}
+.recent_work .row-of-blocks {
+    text-align: center;
+    display: inline-block;
+}
+
+.row-of-blocks a{
+    display: block;
+    float: left;
+    margin-right: 210px;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+}
+.row-of-blocks a:last-child{
+    margin-right: 0px;
+}
+.row-of-blocks a span{
+    display: none;
+    width: 260px;
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    padding: 1em 0;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    background-color: #626262;
+}
+.row-of-blocks a:hover span{
+    display: block;
+}
+/*  Subscription_box  */
+.subscription_box {
+    padding: 50px 0;
+    text-align: center;
+    background-color: darkgray;
+    font-family: "Californian FB";
+}
+.subscription_box h1 {
+    font-size: 300%;
+    text-transform: uppercase;
+}
+.subscription_box h3 {
+    font-size: 120%;
+}
+.subscription_box a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 1px #000000;
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+.subscription_box a:hover {
+    color: rgb(255, 255, 255);
+    background: #626262;
+    border: solid 1px #000000;
+}
+/* Footer  */
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+footer .social {
+    width: auto;
+    margin-bottom: 100px;
+}
+.social a{
+    width: 50px;
+    height: 50px;
+    margin-right: 56px;
+}
+.fb, .t, .d, .g {
+    display: inline-block;
+}
+.social div a {
+    float: left;
+
+}
+.fb a {
+    background: url('../images/1.png') ;
+}
+.t a{
+    background: url('../images/2.png') ;
+}
+.d a{
+    background: url('../images/3.png') ;
+}
+.g a{
+    background: url('../images/4.png') ;
+}
+.fb a:hover {
+    background: url('../images/1a.png') ;
+}
+.t a:hover{
+    background: url('../images/2a.png') ;
+}
+.d a:hover{
+    background: url('../images/3a.png') ;
+}
+.g a:hover{
+    background: url('../images/4a.png') ;
+}
+footer .info {
+    display: inline-block;
+    background: #454545;
+    height: auto;
+    width: 100%;
+}
+.info ul {
+    width: 380px;
+    float: left;
+    font-family: Free Sans;
+    color: azure;
+    font-weight:300;
+}
+.info ul li {
+    text-align: left;
+    list-style: none;
+}
+.info h2 a {
+    font-family: Free Sans;
+    color: azure;
+    font-weight:300;
+    text-decoration: underline;
+}
+.info h2 a:hover{
+    color: crimson;
+}
+.info h1 {
+    font-size: 160%;
+}
+.info h2 {
+    font-size: 100%;
+}
+
+
+

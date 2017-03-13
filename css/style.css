@@ -1,75 +1,57 @@
-body, p, h1, h2 {
+body, p, h1, h2, div, header {
     margin: 0px;
     padding: 0px;
 }
-div, p , h1, h2{
-    /*border: 1px solid #2b2b2b;*/
+div,header, p , h1, h2{
+   /* border: 1px solid #2b2b2b;*/
 }
-p ,h1, h2 {
-    text-align: center;
-}
-header, footer, .wrapper {
-    width: 100%;
+
+header, footer, .content {
+    width: 1200px;
 }
 header, footer {
-    position: relative;
+    height: 150px;
+    font-size:0;
 }
 header {
     background-color:  darkkhaki;
 }
-.info ,.left-empty,.right-empty {
+.info ,.logo, .navigate, .location {
     height: 150px;
+    display: inline-block;
 }
 .info {
-    display: flex;
-    flex-direction: column;
-}
-
-header  .info ,.left-empty,.right-empty {
-    display: table-cell;
-}
-header .info {
-    min-width: 1200px;
-}
-header .left-empty {
     width: 50%;
+    vertical-align: top;
+    font-size: 14px;
 }
-header .right-empty {
-    width: 50%;
+.logo, .navigate{
+    width: 25%;
 }
 .content {
     background: #fddfdf;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: 1200px;
-    margin: auto;
+    height: 1500px;
 }
 
 .content>p {
     background: yellow;
-    width: 250px;
+    width: 230px;
+    height: 250px;
     margin: 25px;
     padding: 10px;
+    float: left;
 }
 
 footer {
     background-color:  #dad55e;
-    height: 150px;
+}
+.location {
+    width: 30%;
 }
 footer .info {
-    position: absolute;
-    width: 1200px;
-    height: 150px;
-    margin: auto;
-    left: 0;
-    right: 0;
+    width: 70%;
 }
-footer .left-empty {
-    position: absolute;
-    height: 150px;
-    width: calc(50% - 600px);
-}
+
 
 
 

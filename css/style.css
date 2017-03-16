@@ -3,42 +3,53 @@ body {
     padding: 0px;
     min-width: 1200px
 }
+
 .wrapper {
     width: 1200px;
     margin: auto;
 }
-.block {
-    line-height: 150px;
+
+.right, .left, .block-text {
     height: 150px;
 }
-header .block {
+
+header .left ,header .right  {
     width: 400px;
 }
-.block:first-child {
+
+header .block-text {
+    line-height: 150px;
+}
+
+.left {
     float: left;
 }
-header .block:nth-child(2) {
+
+.right {
     float: right;
 }
-.block:last-child {
-    overflow: hidden;
-}
+
 header, footer, main {
     width: 100%;
 }
+
 header {
     background-color:  #980f00;
 }
+
 main {
     height: auto;
 }
+
 main .wrapper {
     background: #fddfdf;
     height: auto;
 }
-.blocks {
-    height: 250px;
+
+.text {
+    clear: left;
 }
+
 .square {
     background: yellow;
     width: 230px;
@@ -47,6 +58,7 @@ main .wrapper {
     padding: 10px;
     float: left;
 }
+
 .text > p {
     text-align: center;
     height: 30px;
@@ -54,6 +66,12 @@ main .wrapper {
 footer {
     background-color:  chartreuse;
 }
-footer .block {
+
+footer .left ,footer .block-text {
     width: 600px;
+}
+
+footer .block-text  {
+    display: table-cell;
+    vertical-align: middle;
 }

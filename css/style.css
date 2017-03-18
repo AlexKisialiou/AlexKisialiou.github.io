@@ -1,77 +1,78 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    min-width: 1200px
+body {  
+  margin: 0px;
+  padding: 0px;
+  min-width: 1200px;
 }
-
+  
 .wrapper {
-    width: 1200px;
-    margin: auto;
+  width: 1200px;
+  margin: auto;
+}   
+
+.block {
+  height: 150px;     
 }
 
-.right, .left, .block-text {
-    height: 150px;
+header .block  {
+  width: 400px;
 }
 
-header .left ,header .right  {
-    width: 400px;
+.verticalAlign {
+  line-height: 150px;
 }
 
-header .block-text {
-    line-height: 150px;
+.verticalAlignByTable {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .left {
-    float: left;
+  float: left;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 header, footer, main {
-    width: 100%;
+  width: 100%;
 }
 
 header {
-    background-color:  #980f00;
+  background-color:  #980f00;
 }
 
 main {
-    height: auto;
+  height: auto;
 }
 
 main .wrapper {
-    background: #fddfdf;
-    height: auto;
+  background: #fddfdf;
+  height: auto;
 }
 
 .text {
-    clear: left;
+  clear: left;
 }
 
 .square {
-    background: yellow;
-    width: 230px;
-    height: 160px;
-    margin: 25px;
-    padding: 10px;
-    float: left;
+  background: yellow;
+  width: 230px;
+  height: 160px;
+  margin: 25px;
+  padding: 10px;
+  float: left;
 }
 
 .text > p {
-    text-align: center;
-    height: 30px;
+  text-align: center;
+  height: 30px;
 }
 footer {
-    background-color:  chartreuse;
+  background-color:  chartreuse;
 }
 
-footer .left ,footer .block-text {
-    width: 600px;
+footer .block {
+  width: 600px;
 }
 
-footer .block-text  {
-    display: table-cell;
-    vertical-align: middle;
-}

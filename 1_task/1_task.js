@@ -3,24 +3,24 @@
  */
 
 function addition(a, b) {
-    return +a + +b;
+  return a + b;
 }
 
 function subtraction(a, b) {
-    return a - b;
+  return a - b;
 }
 
 function multiplication(a, b) {
-    return a * b;
+  return a * b;
 }
 
 function division(a, b) {
-    return a / b;
+  return a / b;
 }
 
 function integerDivision(a, b) {
-    var fraction = division(a, b);
-    return  fraction - (fraction % 1) ;
+  var fraction = division(a, b);
+  return  parseInt(fraction, 10);
 }
 
 console.log(addition(1, -4));

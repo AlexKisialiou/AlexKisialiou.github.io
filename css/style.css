@@ -62,6 +62,7 @@ main .wrapper {
 
 .text {
   clear: left;
+  padding-bottom: 150px;
 }
 
 .square {
@@ -84,4 +85,3 @@ footer {
 footer .block {
   width: 600px;
 }
-

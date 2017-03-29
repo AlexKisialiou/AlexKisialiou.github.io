@@ -15,26 +15,19 @@ function isArrayByDuckTyping(arr) {
 }
 //function range
 function range(start, end, multiply) {
-  function createArrayWithDirection(start, end, multiplay) {
-    function createArray(start, end, multiplay) {
-      let array = [];
-      for (start; start <= end; start += multiplay) {
-        array.push(start);
-      }
-      return array;
+  function createArray(start, end, multiplay) {
+    let array = [];
+    for (start; start <= end; start += multiplay) {
+      array.push(start);
     }
-    if (start < end) {
-      return createArray(start, end, multiplay);
-    } else {
-      return createArray(end, start, multiplay).reverse();
-    }
+    return array;
   }
   let arr = [];
   multiply = multiply || 1;
   if (end === undefined) {
-    arr = createArrayWithDirection(0, (start - 1), multiply);
+    arr = createArray(0, (start - 1), multiply);
   } else {
-    arr = createArrayWithDirection(start, end, multiply);
+    arr = createArray(start, end, multiply);
   }
   return arr;
 }
@@ -132,7 +125,6 @@ console.log(isArrayByDuckTyping({}));
 console.log('------Check function range------');
 console.log(range(10));
 console.log(range(1, 5));
-console.log(range(10, 1, 2));
 console.log(range(1, 20, 3));
 console.log('------Check function compact------');
 console.log(compactWithCycle([true, 1, 0, {},

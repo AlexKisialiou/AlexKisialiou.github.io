@@ -15,7 +15,7 @@ function isArrayByDuckTyping(arr) {
 }
 //function range
 function range(start, end, multiply) {
-  var directionRight = (start < end);
+  var directionRight = start < end;
   function createArray(start, end, multiply) {
     let array = [];
     if (directionRight) {
@@ -108,8 +108,14 @@ function excludeLastWithCycle(array, number) {
 }
 
 function excludeLastWithoutCycle(array, number) {
+  let arrayExclude;
   number = number || 1;
-  return array.slice(0, array.length - number);
+  if (number < 0) {
+    arrayExclude = array.slice(-number, array.length);
+  } else {
+    arrayExclude = array.slice(0, array.length - number);
+  }
+  return arrayExclude;
 }
 
 console.log('------Check function isArray------');
@@ -121,13 +127,18 @@ console.log(isArrayByDuckTyping([]));
 console.log(isArrayByDuckTyping({}));
 console.log('------Check function range------');
 console.log(range(10));
-console.log(range(1, 5));
-console.log(range(5, 5));
-console.log(range(1, 20, 3));
-console.log(range(1, 20, -3));
-console.log(range(20, 10));
-console.log(range(20, 1, -3));
-console.log(range(20, 1, 3));
+console.log(range(1, 10));
+console.log(range(1, 10, 3));
+console.log(range(10, null, 3));
+console.log(range(10, null, 3));
+console.log(range(10, null));
+console.log(range(-2, -5));
+console.log(range(-5, -2));
+console.log(range(-5, -2, 2));
+console.log(range(-5, null, 2));
+console.log(range(-5, null, -2));
+console.log(range(-10, -20, -5));
+console.log(range(-20, -10, -5));
 console.log('------Check function compact------');
 console.log(compactWithCycle([true, 1, 0, {},
   [], false, null, 15, 0, false
@@ -147,8 +158,11 @@ console.log(uniqueWithMethods([1, 1, 1, 1, 1, 1, 2, 3, 4, 4, 5, 5, 't', 'y', {},
 }]));
 console.log('------Check function last------');
 console.log(lastWithLength([1, 2, 3, 4, 10]));
+console.log(lastWithLength([1, 2, 3, 4, 10]));
+
 console.log('------Check function exclude------');
-console.log(excludeLastWithCycle([1, 2, 3, 4, 10]));
-console.log(excludeLastWithCycle([1, 2, 3, 4, 10], 2));
-console.log(excludeLastWithoutCycle([1, 2, 3, 4, 10]));
-console.log(excludeLastWithoutCycle([1, 2, 3, 4, 10], 2));
+console.log(excludeLastWithCycle([1, 2, 3, 4]));
+console.log(excludeLastWithCycle([1, 2, 3, 4], 2));
+console.log(excludeLastWithoutCycle([1, 2, 3, 4]));
+console.log(excludeLastWithoutCycle([1, 2, 3, 4], 2));
+console.log(excludeLastWithoutCycle([1, 2, 3, 4], -1));

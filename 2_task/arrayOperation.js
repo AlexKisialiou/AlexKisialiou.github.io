@@ -15,36 +15,25 @@ function isArrayByDuckTyping(arr) {
 }
 //function range
 function range(start, end, multiply) {
-  var directionRight = start < end;
-  function createArray(start, end, multiply) {
-    let array = [];
-    if (directionRight) {
-      for (start; start < end; start += multiply) {
-        array.push(start);
-      }
-    }
-    else {
-      for (start; start > end; start += multiply) {
-        array.push(start);
-      }
-    }
-    return array;
+  multiply = multiply || 1;
+  let array = [];
+  if (end == undefined) {
+    end = start;
+    start = 0;
   }
-  let arr = [];
-  if (end === undefined && multiply === undefined) {
-    directionRight = true;
-    arr = createArray(0, (start), 1);
+  let arrayLeng = multiply > 0 ? end - start : start - end;
+  if (multiply > 0) {
+    for (let i = start; i < arrayLeng + start; i += multiply) {
+      array.push(i);
+    }
   } else {
-    var defaultMultiply = directionRight ? 1 : -1;
-    multiply = multiply || defaultMultiply;
-    var validate = directionRight ? multiply > 0 : multiply < 0;
-    if (!validate) {
-      return arr;
+    for (let i = arrayLeng + end; i > end; i += multiply) {
+      array.push(i);
     }
-    arr = createArray(start, end, multiply);
   }
-  return arr;
+  return array;
 }
+
 //function compact
 function compactWithoutCycle(array) {
   return array.filter(function(item) {
@@ -111,7 +100,7 @@ function excludeLastWithoutCycle(array, number) {
   let arrayExclude;
   number = number || 1;
   if (number < 0) {
-    arrayExclude = array.slice(-number, array.length);
+    arrayExclude = array.slice(-number);
   } else {
     arrayExclude = array.slice(0, array.length - number);
   }
@@ -126,19 +115,20 @@ console.log(isArrayByPrototype({}));
 console.log(isArrayByDuckTyping([]));
 console.log(isArrayByDuckTyping({}));
 console.log('------Check function range------');
-console.log(range(10));
-console.log(range(1, 10));
-console.log(range(1, 10, 3));
-console.log(range(10, null, 3));
-console.log(range(10, null, 3));
-console.log(range(10, null));
-console.log(range(-2, -5));
-console.log(range(-5, -2));
-console.log(range(-5, -2, 2));
-console.log(range(-5, null, 2));
-console.log(range(-5, null, -2));
-console.log(range(-10, -20, -5));
-console.log(range(-20, -10, -5));
+console.log('(10)=', range(10));
+console.log('(1,10)=', range(1, 10));
+console.log('(10,1, -1)=', range(10, 1, -1));
+console.log('(1,10,3)=', range(1, 10, 3));
+console.log('(10,null,3)=', range(10, null, 3));
+console.log('(10,null)=', range(10, null));
+console.log('(-2,-5)=', range(-2, -5));
+console.log('(-5,-2)=', range(-5, -2));
+console.log('(-5,-2,2)=', range(-5, -2, 2));
+console.log('(-5,-2,-2)=', range(-5, -2, -2));
+console.log('(-5,null,2)=', range(-5, null, 2));
+console.log('(-5,null,-2)=', range(-5, null, -2));
+console.log('(-10,-20,-5)=', range(-10, -20, -5));
+console.log('(-20,-10,-5)=', range(-20, -10, -5));
 console.log('------Check function compact------');
 console.log(compactWithCycle([true, 1, 0, {},
   [], false, null, 15, 0, false
@@ -159,10 +149,10 @@ console.log(uniqueWithMethods([1, 1, 1, 1, 1, 1, 2, 3, 4, 4, 5, 5, 't', 'y', {},
 console.log('------Check function last------');
 console.log(lastWithLength([1, 2, 3, 4, 10]));
 console.log(lastWithLength([1, 2, 3, 4, 10]));
-
 console.log('------Check function exclude------');
 console.log(excludeLastWithCycle([1, 2, 3, 4]));
 console.log(excludeLastWithCycle([1, 2, 3, 4], 2));
 console.log(excludeLastWithoutCycle([1, 2, 3, 4]));
 console.log(excludeLastWithoutCycle([1, 2, 3, 4], 2));
 console.log(excludeLastWithoutCycle([1, 2, 3, 4], -1));
+console.log(excludeLastWithoutCycle([1, 2, 3, 4], -2));

@@ -1,12 +1,13 @@
-body {  
+body {
   margin: 0px;
   padding: 0px;
   min-width: 1200px;
 }
+
 html, body {
   height: 100%;
 }
-  
+
 .wrapper {
   width: 1200px;
   margin: auto;
@@ -19,10 +20,10 @@ html, body {
 }
 
 .block {
-  height: 150px;     
+  height: 150px;
 }
 
-header .block  {
+header .block {
   width: 400px;
 }
 
@@ -48,7 +49,7 @@ header, footer, main {
 }
 
 header {
-  background-color:  #980f00;
+  background-color: #980f00;
 }
 
 main {
@@ -74,14 +75,27 @@ main .wrapper {
   float: left;
 }
 
-.text > p {
+.text>p {
   text-align: center;
   height: 30px;
 }
+
 footer {
-  background-color:  chartreuse;
+  background-color: chartreuse;
 }
 
 footer .block {
   width: 600px;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }

@@ -2,15 +2,16 @@
 <html>
   <head>
     <link href="css/style.css" rel="stylesheet">
-    <meta charset="utf-8"> </head>
+    <meta charset="utf-8">
+  </head>
   <body>
     <div class="container">
       <header>
           <div class="wrapper">
-            <div class="block left">
+            <div class="left">
               <a href="a">Минск</a>
               <a class="small-blue-link" href="a">адреса магазинов</a> </div>
-            <div class="block right">
+            <div class="right">
               <a class="right small-blue-link" href="">войти в личный кабинет</a>
             </div>
             <div class="align-horiz">
@@ -22,10 +23,10 @@
             </div>
           </div>
           <div class="wrapper">
-            <div class="left middle-150px block">
+            <div class="left">
               <img src="img/logo1.gif" />
             </div>
-            <div class="info-header middle-150px">
+            <div class="info-header">
               <ul class="links-horizontal">
                 <li> <a class="small-blue-link" href="">Вакансия</a> </li>
                 <li> <a class="small-blue-link" href="">Уценка</a> </li>
@@ -34,43 +35,64 @@
                 <li> <a class="small-blue-link" href="">Кредит</a> </li>
                 <li> <a class="small-blue-link" href="">Клуб покупателей</a> </li>
               </ul>
-              <form class="search left  ">
+              <form class="left search">
                 <input type="text" /> </form>
               <a class="right trash" href=""> корзина</a>
             </div>
           </div>
-
       </header>
       <div class="main wrapper">
-          <div class="nav left">
-            <ul class="menu">
-              <a class="dropbtn" href="">ТВ,аудио,видео</a>
-            </ul>
-            <ul class="menu">
-               <a class="dropbtn" href="">Компьютерная техника</a>
-             </ul>
-            <ul class="menu">
-              <a class="dropbtn" href="">Игровая зона</a>
-            </ul>
-            <ul class="menu">
-              <a class="dropbtn" href="">Фотокамеры</a>
-            </ul>
-            <ul class="menu">
-              <a class="dropbtn" href="">Телефония</a>
-             </ul>
-            <ul class="menu">
-              <a class="dropbtn" href="">Бытовая техника</a>
-            </ul>
-            <ul class="menu">
-              <a class="dropbtn" href="">Техника для автомобиля</a>
-            </ul>
-            <ul class="menu">
-              <a class="dropbtn" href="">Акции</a>
-            </ul>
+          <div class="left">
+            <div class="menu">
+              <a data-name="drop1" onclick="myFunction(this)" class="dropbtn" >ТВ,аудио,видео</a>
+              <ul id="drop1" class="drop">
+                <li><a class="small-blue-link" href="">Телевизор</></li>
+                <li><a class="small-blue-link" href="">Домашние кинотеатры</></li>
+                <li><a class="small-blue-link" href="">Проекторы</></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-name="drop2" onclick="myFunction(this)" class="dropbtn" >Компьютерная техника</a>
+              <ul id="drop2" class="drop">
+                <li><a class="small-blue-link" href="">Планшеты</></li>
+                <li><a class="small-blue-link" href="">Ноутбуки</></li>
+                <li><a class="small-blue-link" href="">Компьтеры</></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-name="drop3" onclick="myFunction(this)" class="dropbtn" >Игровая зона</a>
+              <ul id="drop3" class="drop">
+                <li><a class="small-blue-link" href="">Игровые приставки</></li>
+                <li><a class="small-blue-link" href="">Игры</></li>
+                <li><a class="small-blue-link" href="">Велосипеды</></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-name="drop4" onclick="myFunction(this)" class="dropbtn" >Фотокамеры</a>
+              <ul id="drop4" class="drop">
+                <li><a class="small-blue-link" href="">Видиокамеры</></li>
+                <li><a class="small-blue-link" href="">Экшн камеры</></li>
+                <li><a class="small-blue-link" href="">Карты памяти</></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a class="dropbtn" >Телефония</a>
+            </div>
+            <div class="menu">
+              <a class="dropbtn" >Бытовая техника</a>
+            </div>
+            <div class="menu">
+              <a class="dropbtn" >Техника для автомобиля</a>
+            </div>
+            <div class="menu">
+              <a class="dropbtn" >Акции</a>
+            </div>
           </div>
-          <div class=" ">
-            <div class=" info-block left"> <img class="padding-5px" src="img/sale.jpg" /> </div>
-            <ul class="info-block left">
+          <div class="info-block">
+            <div class="left">
+              <img class="padding-5px" src="img/sale.jpg" />
+            </div>
+            <ul class="left width-350px">
               <li> <img src="img/car.png" /> <a href="">доставка</a> </li>
               <li> <img src="img/money.png" /> <a href="">кредитные предложения</a> </li>
               <li> <img src="img/bag.png" /> <a href="">вакансии</a> </li>

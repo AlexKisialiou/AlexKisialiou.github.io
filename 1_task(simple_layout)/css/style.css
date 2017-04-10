@@ -1,0 +1,101 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  min-width: 1200px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.container {
+  min-height: 100%;
+  margin-bottom: -150px;
+  width: 100%;
+}
+
+.block {
+  height: 150px;
+}
+
+header .block {
+  width: 400px;
+}
+
+.verticalAlign {
+  line-height: 150px;
+}
+
+.verticalAlignByTable {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+header, footer, main {
+  width: 100%;
+}
+
+header {
+  background-color: #980f00;
+}
+
+main {
+  height: auto;
+}
+
+main .wrapper {
+  background: #fddfdf;
+  height: auto;
+}
+
+.text {
+  clear: left;
+  padding-bottom: 150px;
+}
+
+.square {
+  background: yellow;
+  width: 230px;
+  height: 160px;
+  margin: 25px;
+  padding: 10px;
+  float: left;
+}
+
+.text>p {
+  text-align: center;
+  height: 30px;
+}
+
+footer {
+  background-color: chartreuse;
+}
+
+footer .block {
+  width: 600px;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}

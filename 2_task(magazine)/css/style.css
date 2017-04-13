@@ -1,12 +1,11 @@
 /*************************** Сброс стилей *****************************/
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe, a, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   outline: 0;
   font-size: 100%;
   background: transparent;
-  /*border: 0.01px solid black;*/
 }
 
 a {
@@ -41,8 +40,8 @@ html, body {
 
 .container {
   min-height: 100%;
-  margin-bottom: -150px;
   width: 100%;
+  margin-bottom: -480px;
 }
 
 .left {
@@ -67,12 +66,85 @@ html, body {
   color: red;
 }
 
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.align-horiz {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.line-height30px {
+  line-height: 30px;
+}
+
+.line-height80 {
+  line-height: 80px;
+}
+
+.padding-top30px {
+  padding-top: 30px;
+}
+
+.padding-bootom-1px {
+  padding-bottom: 1px;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 30px;
+}
+
+.imgAllwidth {
+  width: 100%;
+  height: 100%;
+}
+
+.height300px {
+  height: 300px;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.table {
+  display: table;
+}
+
+.display-block {
+  display: block;
+}
+
+.height40px {
+  height: 40px;
+}
+
+.padding-bottom480px {
+  padding-bottom: 480px;
+}
+
 
 /************************* Хедер ***************************/
+
+.font-grey {
+  background-color: rgb(242, 239, 231)
+}
+
+.marginRight50px {
+  margin-right: 50px;
+}
 
 .links-horizontal li {
   display: inline;
   margin-right: 50px;
+}
+
+.links-horizontal li:last-child {
+  margin: auto;
 }
 
 .search input {
@@ -85,8 +157,6 @@ html, body {
   border: 1px solid #ff8a2b;
   border-radius: 5px;
   padding: 8px 30px;
-  margin-top: 20px;
-  margin-right: 100px;
 }
 
 .trash:hover {
@@ -97,61 +167,73 @@ html, body {
 /************************* Навигация ***************************/
 
 .menu {
-  float: left;
-  background: rgb(92, 145, 40);
-  height: auto;
+  border: 2px solid black;
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
 }
 
 .dropbtn {
-  background-color: rgb(44, 55, 52);
+  display: block;
+  line-height: 20px;
   color: white;
-  padding: 4px;
-  font-size: 17px;
-  border: 2px solid black;
+  font-weight: bolder;
+  background-color: rgb(44, 55, 52);
+  font-size: 15px;
   cursor: pointer;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+
+.last-element-menu {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size: 20px;
+  color: red;
+}
+
+.last-element-menu:hover {
+  color: white;
 }
 
 .dropbtn:hover {
   background-color: rgb(207, 23, 27);
-  border: 2px solid rgb(207, 23, 27);
-}
-
-.menu {
-  position: relative;
-  display: inline-block;
 }
 
 .drop {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 250px;
+  min-width: 230px;
   border: 2px solid red;
   z-index: 1;
+}
+
+.drop li {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.drop a {
+  cursor: pointer;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: block;
+  color: rgb(61, 124, 159);
+  font-size: 14px;
+}
+
+.drop a:hover {
+  color: red;
 }
 
 .show {
   display: block;
 }
-.drop li {
-  padding-left: 10px;
-}
-
-.drop a {
-  cursor: pointer;
-  color: black;
-  padding: 5px 8px;
-  text-decoration: none;
-  display: block;
-}
-.drop a:hover {background-color: #f1f1f1}
 
 
 /*************************main ***************************/
-
-.main {
-  padding-bottom: 200px;
-}
 
 .main:after {
   content: ".";
@@ -162,55 +244,105 @@ html, body {
   height: 0;
 }
 
-.width-350px {
-  width: 350px;
+
+/*************************info-block ***************************/
+
+.info-block ul {
+  overflow: hidden;
 }
 
-.info-block ul li {
-  border: 0.5px solid grey;
+.info-block a {
+  display: block;
+}
+
+.info-block a:hover {
+  color: red;
+}
+
+.info-block a img {
+  vertical-align: middle;
+}
+
+.info-block li {
+  border: 0.1px solid rgb(182, 182, 182);
   background: rgba(217, 217, 217, 0.99);
   height: 100px;
   box-sizing: border-box;
   text-align: center;
+  line-height: 100px;
 }
 
-.align-horiz {
-  text-align: center;
+.info-block a {
+  text-decoration: underline;
+  color: black
+}
+
+.info-block li:hover {
+  background: rgba(217, 217, 217, 0.50);
+}
+
+.info-block span {
+  margin-left: 15px;
+}
+
+.info-block ul a:last-child li {
+  border-bottom-right-radius: 25px;
+}
+
+
+/*************************hot-sale ***************************/
+
+.hot-sale {
+  height: 400px;
 }
 
 .hot-sale div {
   border: 3px solid grey;
+  border-right: none;
   box-sizing: border-box;
-  border-radius: 10px;
   width: 25%;
-  height: 400px;
+  height: 100%;
   float: left;
   text-align: center;
+}
+
+.hot-sale .old-price {
+  text-decoration: line-through;
+  font-size: 18px;
+  text-align: left;
+}
+
+.hot-sale .new-price {
+  color: red;
+  font-size: 25px;
+  text-align: right;
+}
+
+.hot-sale div:first-child {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.hot-sale div:last-child {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-right: 3px solid grey;
 }
 
 .hot-sale div :first-child {
   margin: 20px;
 }
 
-.hot-sale div p {
-  margin-bottom: 10px;
+.hot-sale p {
+  width: 150px;
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 .hot-sale div p:first-of-type {
-  width: 150px;
-  margin: 0 auto;
   border-radius: 15px;
   border: 1px solid grey;
   background: yellow;
-}
-
-.hot-sale div p:last-of-type {
-  color: red;
-  font-size: 30px;
-}
-
-.display-block {
-  display: block;
 }
 
 .button-in-trash {
@@ -229,11 +361,76 @@ html, body {
   background: rgb(152, 15, 0);
 }
 
+.advertisting {
+  text-align: justify;
+}
+
+.advertisting:after {
+  display: inline-block;
+  content: "";
+  width: 100%;
+}
+
+
 /*************************footer ***************************/
 
 footer {
   background-color: chartreuse;
-  height: 150px;
   width: 100%;
-  margin-top: -150px;
+}
+
+footer ul {
+  width: 18%;
+}
+
+footer a {
+  color: rgb(61, 124, 159);
+  font-size: 13px;
+}
+
+footer a:hover {
+  color: red;
+}
+
+.card {
+  text-align: justify;
+  height: 80px;
+}
+
+.card img {
+  display: inline-block;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.card:after {
+  width: 100%;
+  content: '';
+  display: inline-block;
+}
+
+.social {
+  width: 20%;
+}
+
+.social img {
+  width: 150px;
+}
+
+.height400px {
+  height: 400px;
+}
+
+.company-info {
+  width: 26%;
+}
+
+.company-info form {
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.company-info p {
+  font-size: 14px;
 }

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container ">
+      <header>
+        <div class="font-grey">
+          <div class="wrapper line-height30px ">
+            <div class="left">
+              <a class="vertical-align-middle" href="a">Минск</a>
+              <a class="small-blue-link " href="a">адреса магазинов</a>
+            </div>
+            <div class="right">
+              <a class="right small-blue-link" href="">войти в личный кабинет</a>
+            </div>
+            <div class="align-horiz">
+              <img class="vertical-align-middle" src="img/phones_mts.gif" />
+              <img class="vertical-align-middle" src="img/phones_vel.gif" />
+              <img class="vertical-align-middle" src="img/phones_life.gif" />
+              <a class="text-red vertical-align-middle " href="">275</a>
+              <a  class="vertical-align-middle" href="">единый мобильный номер</a>
+            </div>
+          </div>
+        </div>
+        <ul class="links-horizontal wrapper align-right">
+          <li> <a class="small-blue-link" href="">Вакансия</a> </li>
+          <li> <a class="small-blue-link" href="">Уценка</a> </li>
+          <li> <a class="small-blue-link" href="">Акции</a> </li>
+          <li> <a class="small-blue-link" href="">Услуги</a> </li>
+          <li> <a class="small-blue-link" href="">Кредит</a> </li>
+          <li> <a class="small-blue-link" href="">Клуб покупателей</a> </li>
+        </ul>
+        <div class="wrapper">
+          <div class="left">
+            <img src="img/logo3.gif" />
+          </div>
+          <div class="right line-height80 ">
+            <a class="trash " href=""> корзина</a>
+          </div>
+          <form class="search line-height80 align-horiz">
+            <input class="vertical-align-middle" type="text" />
+          </form>
+
+        </div>
+      </header>
+      <div class="main padding480px">
+          <div class="wrapper table">
+            <div class="menu">
+              <a data-dropdown-menu="drop1"  class="dropbtn" >ТВ,аудио,</br>видео</a>
+              <ul id="drop1" class="drop">
+                <li><a  href="">Телевизор</a></li>
+                <li><a  href="">Домашние кинотеатры</a></li>
+                <li><a  href="">Проекторы</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-dropdown-menu="drop2" class="dropbtn">Компьютерная</br>техника</a>
+              <ul id="drop2" class="drop">
+                <li><a  href="">Планшеты</a></li>
+                <li><a  href="">Ноутбуки</a></li>
+                <li><a  href="">Компьтеры</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-dropdown-menu="drop3"  class="dropbtn" >Игровая</br>зона</a>
+              <ul id="drop3" class="drop">
+                <li><a  href="">Игровые приставки</a></li>
+                <li><a  href="">Игры</a></li>
+                <li><a  href="">Велосипеды</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-dropdown-menu="drop4" class="dropbtn" >Фотокамеры,</br>видеокамеры</a>
+              <ul id="drop4" class="drop">
+                <li><a  href="">Видеокамеры</a></li>
+                <li><a  href="">Экшн камеры</a></li>
+                <li><a  href="">Карты памяти</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-dropdown-menu="drop5" class="dropbtn">Телефония,</br>связь</a>
+              <ul id="drop5" class="drop">
+                <li><a  href="">Телефон</a></li>
+                <li><a  href="">Зарядное</a></li>
+                <li><a  href="">Блок питания</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <a data-dropdown-menu="drop6" class="dropbtn">Бытовая</br>техника</a>
+              <ul id="drop6" class="drop">
+                <li><a  href="">Стиральные машины</a></li>
+                <li><a  href="">Фены</a></li>
+                <li><a  href="">Холодильники</a></li>
+              </ul>
+            </div>
+            <div  class="menu">
+              <a data-dropdown-menu="drop7" class="dropbtn">Техника для</br>автомобиля</a>
+              <ul id="drop7" class="drop">
+                <li><a  href="">Навигаторы</a></li>
+                <li><a  href="">Прикуриватели</a></li>
+                <li><a  href="">Магнитолы</a></li>
+              </ul>
+            </div>
+            <div class="menu width-all">
+                  <a data-dropdown-menu="drop8"class="dropbtn last-element-menu">Акции</a>
+                  <ul id="drop8" class="drop">
+                    <li><a  href="">Супер цены</a></li>
+                    <li><a  href="">Товары в рассрочку</a></li>
+                    <li><a  href="">Спецпердложения</a></li>
+                  </ul>
+            </div>
+          </div>
+          <div class="wrapper info-block margin-bottom-30px">
+            <div class="left height300px">
+              <img class="imgAllwidth" src="img/sale.jpg" />
+            </div>
+            <ul>
+              <a href=""><li><img  src="img/car.png" /><span>Доставка</span></li></a>
+              <a href=""><li><img src="img/money.png" /><span>Кредитные предложения</span></li></a>
+              <a href=""><li><img src="img/bag.png" /><span>Вакансии</span> </li></a>
+            </ul>
+          </div>
+          <div class="wrapper hot-sale margin-bottom-30px">
+            <div>
+               <img class="" src="img/4thing.jpeg" />
+               <p> Экономия:<br />14.00</p>
+               <p class="old-price">147.00</p>
+               <p class="new-price">133.00</p>
+               <a class="display-block small-blue-link height40px" href="">
+               LT260830 Тостер Moulinex
+               </a>
+               <a class="button-in-trash display-block" href="">
+               в корзину
+               </a>
+            </div>
+            <div>
+              <img class="align-horiz" src="img/1thing.jpg" />
+              <p> Экономия:<br />14.00</p>
+              <p class="old-price">147.00</p>
+              <p class="new-price">133.00</p>
+              <a class="display-block small-blue-link height40px" href="">
+              HX9368/35 Электрическая зубная щетка PHILIPS
+              </a>
+              <a class="button-in-trash display-block" href="">
+              в корзину
+              </a>
+            </div>
+            <div>
+              <img class="" src="img/2thing.jpg" />
+              <p> Экономия:<br />20.00</p>
+              <p class="old-price">103.00</p>
+              <p class="new-price">150.00</p>
+              <a class="display-block small-blue-link height40px" href="">
+              ES-ED23-V520 Эпилятор PANASONIC
+            </a>
+              <a class="button-in-trash display-block" href="">
+              в корзину
+            </a>
+            </div>
+            <div>
+              <img class="horizontal-align" src="img/3thing.jpeg" />
+              <p> Экономия:<br />20.00</p>
+              <p class="old-price">200.00</p>
+              <p class="new-price">166.00</p>
+              <a class="display-block small-blue-link height40px" href="">
+                HX9368/35 Электрическая зубная щетка PHILIPS
+              </a>
+              <a class="button-in-trash display-block" href="">
+              в корзину
+            </a>
+            </div>
+          </div>
+          <div class="wrapper advertisting">
+            <img src="img/advertising1.jpg"/>
+            <img src="img/advertising2.png"/>
+            <img src="img/advertising3.png"/>
+          </div>
+      </div>
+    </div>
+    <footer class="font-grey padding30px ">
+      <div class="wrapper height400px">
+        <div class="social left">
+          <img src="img/call1.png"/>
+          <img src="img/call2.png"/>
+          <img src="img/call3.png"/>
+          <img src="img/call4.png"/>
+        </div>
+        <ul class="left">
+          <li><a href="">Каталог товаров</a></li>
+          <li><a href="">ТВ, аудио, видео</a></li>
+          <li><a href="">Компьютерная техника</a></li>
+          <li><a href="">Игровая зона</a></li>
+          <li><a href="">Фотокамеры,</br>видиокамеры</a></li>
+          <li><a href="">Телефония, связь</a></li>
+          <li><a href="">Бытовая техника</a></li>
+          <li><a href="">Встраиваемая техника</a></li>
+          <li><a href="">Техника для</br>автомобиля</a></li>
+          <li><a href="">Уцененные товары</a></li>
+          <li><a href="">Акции и новости</a></li>
+          <li><a href="">СуперЦены</a></li>
+          <li><a href="">Рассрочка</a></li>
+        </ul>
+        <ul class="left">
+          <li><a href="">Услуги</a></li>
+          <li><a href="">Услуга "Мульти"</a></li>
+          <li><a href="">Клуб покупателей</a></li>
+          <li><a href="">Подарочные карты</a></li>
+          <li><a href="">Кредит</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">IT-сервисы</a></li>
+          <li><a href="">Новоселам и</br>Молодоженам</a></li>
+          <li><a href="">Программа</br>расширенного сервиса</a></li>
+          <li><a href="">Покупайте по</br>безналичному расчету</a></li>
+          <li><a href="">Сервичные центры</a></li>
+          <li><a href="">Справка</a></li>
+          <li><a href="">Задать вопрос</a></li>
+        </ul>
+        <ul class="left">
+          <li><a href="">О компании</a></li>
+          <li><a href="">История компании</a></li>
+          <li><a href="">Структура компании</a></li>
+          <li><a href="">События</a></li>
+          <li><a href="">История успеха</a></li>
+          <li><a href="">Вакансии</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Карта сайта</a></li>
+          <li><a href="">Интернет-магазин</a></li>
+          <li><a href="">Как сделать заказ</a></li>
+          <li><a href="">Оплата</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Полезные статьи</a></li>
+          <li><a href="">Адреса магазинов</a></li>
+        </ul>
+        <div class="left company-info">
+          <form>
+            <p>Подписка на акции и новости</p>
+            <input />
+            <a href=""></a>
+          </form>
+          <img src="img/banner_one.gif"/>
+          <p>
+            ЗАО "Патио" 220005, г. Минск, пр-т Независимости, 58-301
+            Свидетельство о государственной регистрации №100183195 от 18.04.2001 выдано Мингорисполкомом
+            Дата регистрации интернет-магазина 5element.by в торговом реестре Республики Беларусь - 18.02.2014</br>
+            <a href="">Правовая информация</a></br>
+            © «5 элемент», 2006–2017
+          </p>
+
+        </div>
+      </div>
+      <div class="wrapper card">
+        <img src="img/card1.png"/>
+        <img src="img/card2.png"/>
+        <img src="img/card3.png"/>
+        <img src="img/card4.png"/>
+        <img src="img/card5.png"/>
+        <img src="img/card6.png"/>
+        <img src="img/card8.png"/>
+      </div>
+    </footer>
+    <script src="js/dropdown.js"></script>
+  </body>
+
+</html>
